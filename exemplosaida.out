@@ -1,0 +1,27 @@
+Resultado da entrada:1+2  eh:  3
+Resultado da entrada:1+2-3  eh:  0
+Resultado da entrada:7*-7  eh:  -49
+Resultado da entrada:35 - 3 * (-2 + 5)^2  eh:  8
+Resultado da entrada:54 / 3 ^ (12%5) * 2  eh:  12
+Resultado da entrada:((2-3)*10 - (2^3*5))  eh:  -50
+Resultado da entrada:(1+2) * (3-4)  eh:  -3
+Resultado da entrada:1^2*3-4+5/6/(7+8)  eh:  -1
+Resultado da entrada:1-2/(3*4^5)  eh:  1
+Resultado da entrada:1000000 − 2 Erro 1 -> Constante numerica invalida 
+ eh:  0
+Resultado da entrada:2 ** 3 Erro 2 -> Falta operando 
+ eh:  0
+Resultado da entrada:3 * d Erro 3 -> Operando invalido 
+ eh:  0
+Resultado da entrada:2 = 3 Erro 4 -> Operador invalido 
+ eh:  0
+Resultado da entrada:2 * 3 4 Erro 5 -> Falta operador 
+ eh:  0
+Resultado da entrada:2-4) Erro 6 -> Fechamento de escopo invalido 
+ eh:  0
+Resultado da entrada:((2%3) * 8 Erro 7 -> Escopo aberto 
+ eh:  0
+Resultado da entrada:3/(1-1) Erro 8 -> Divisao por zero 
+ eh:  0
+Resultado da entrada:((1+2)*3-(4-5))^(6+7) Erro 9 -> Resultado ultrapassa limites de representacao 
+ eh:  0

@@ -1,0 +1,56 @@
+				---- Projeto BARES ----
+Realiado pelo aluno Giovanni Franco de Paula Rosário, matricula 2015031750, para a disciplica de Estrutura de Dados Básicas I.
+
+
+				---- Compilamento ---- 
+O programa deve ser compilado pelo seguinte código:
+	g++ -std=c++11 baresmain.cpp bares.cpp -Wall -o bares
+
+
+
+				---- Execucao do programa ----
+O programa pode ser executado de duas maneiras;
+
+1ª - 
+Colocar todas as expressoes desejadas, uma por linha, no arquivo de texto "entrada.in" e executar pelo terminal pelo código:
+	./bares <entrada.in> saida.out
+Basta abrir o arquivo de texto "saida.out" para ter acesso às respostas;
+
+2ª - 
+Executar pelo terminal pelo código
+	./bares
+Inserir uma expressao por linha e enviar, o programa imprimira o resultado no terminal e estara pronto para receber a proxima linha;
+Quando quiser encerrar, use CTRL+D (End of file).
+
+
+
+				---- Tratamento de erros ----
+O programa trata dos seguintes erros
+Erro 1 -> Constante numerica invalida 
+Erro 2 -> Falta operando 
+Erro 3 -> Operando invalido 
+Erro 4 -> Operador invalido 
+Erro 5 -> Falta operador 
+Erro 6 -> Fechamento de escopo inválido 
+Erro 7 -> Escopo aberto 
+Erro 8 -> Divisao por zero 
+Erro 9 -> Resultado ultrapassa limites de representacao 
+	(Overflow, é diferente do erro 1 pois esse acontece durante a fase de processamento do resultado, apesar de uma entrada válida)
+
+Ao inserir uma expressao com algum destes erros, o programa termina, imprimi o Código e Nome do erro e retorna o resultado 0;
+
+
+				---- Limitacoes ---- 
+O programa aceita qualquer expressao formada por operandos de tipo inteiro na faixa de -32767 a 32767 e operadores '(' ; ')' ; '- unitário'; '*' ; '/' ; '%'; '+'; '-';
+
+O programa trata corretamente o operador '-' desde que ele não apareca de forma seguida. p.e: 4*--3 , --7+5 ; 	
+				
+
+				--- Considerações extras ---- 
+A funcao que imprime a expressao no formato posfixa foi comentada para nao sair na impressao final, caso queira acessa-la, basta
+descomentar a linha 145 do arquivo bares.inl
+
+Foram implementadas as classes Fila e Pilha;
+A Pilha implementada no formato template para ser usada com inteiros (operandos) e com characteres (operadores);
+A Fila implementada com struct simbolo; que corresponde a uma junção de inteiro e charactere;
+
